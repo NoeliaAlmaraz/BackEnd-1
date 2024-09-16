@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Producto 1",
+    "price": 100,
+    "stock": 1000,
+    "photo": "photo.png",
+    "id": "8749d14ea28102e5f44aefdf"
+  },
+  {
+    "title": "Producto 1",
+    "price": 100,
+    "stock": 1000,
+    "photo": "photo.png",
+    "id": "6fd27a375d845d86195903ab"
+  },
+  {
+    "title": "Producto 1",
+    "price": 100,
+    "stock": 1000,
+    "photo": "photo.png",
+    "id": "e3d96613dfdffb09fad91b86"
+  },
+  {
+    "title": "Producto 1",
+    "price": 100,
+    "stock": 1000,
+    "photo": "photo.png",
+    "id": "b352e90eece957a0d12f31d6"
+  }
+]
