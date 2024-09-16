@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Producto 1",
+    "price": 100,
+    "stock": 1000,
+    "photo": "photo.png",
+    "id": "8749d14ea28102e5f44aefdf"
+  },
+  {
+    "title": "Producto 1",
+    "price": 100,
+    "stock": 1000,
+    "photo": "photo.png",
+    "id": "6fd27a375d845d86195903ab"
+  },
+  {
+    "title": "Producto 1",
+    "price": 100,
+    "stock": 1000,
+    "photo": "photo.png",
+    "id": "e3d96613dfdffb09fad91b86"
+  },
+  {
+    "title": "Producto 1",
+    "price": 100,
+    "stock": 1000,
+    "photo": "photo.png",
+    "id": "b352e90eece957a0d12f31d6"
+  },
+  {
+    "title": "producto2",
+    "price": "125",
+    "stock": "100",
+    "id": "fa22fe463562124771f827e3"
+  },
+  {
+    "title": "producto2",
+    "price": "125",
+    "stock": "100",
+    "category": "zapatos",
+    "id": "643523a676cdaeb290ba4362"
+  },
+  {
+    "title": "producto2",
+    "price": "125",
+    "stock": "100",
+    "category": "camiseta",
+    "supplier": "none",
+    "id": "eb5097d28322dddbb49c2aa8"
+  }
+]
