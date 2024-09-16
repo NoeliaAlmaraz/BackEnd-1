@@ -24,8 +24,10 @@ class ProductsManager {
       //con esto hacemos el filtro por categoria para leer solo los productos con esa categoria
       //tambien condicionamos si no existe la categoria, en ese caso se devuelve todos los productos
       //hay que cambiar en el products.manager tambien la funcion de readAll
-      if(category){
-        const fiteredData = parseData.filter((product) => product.category === category);
+      if (category) {
+        const fiteredData = parseData.filter(
+          (product) => product.category === category
+        );
         return fiteredData;
       } else {
         return parseData;
@@ -63,11 +65,11 @@ class ProductsManager {
   // Método para actualizar un producto por su id
   async update(id, updatedData) {
     try {
-      const all = await this.read();
+      const all = await this.readAll();
       const index = all.findIndex((product) => product.id === id);
 
-      if (index === -1) {
-        throw new Error("Producto no encontrado");
+      if (index < 0) {
+        return null;
       }
 
       // Actualizar los campos del producto existente
@@ -82,11 +84,11 @@ class ProductsManager {
   // Método para eliminar un producto por su id
   async delete(id) {
     try {
-      const all = await this.read();
+      const all = await this.readAll();
       const filteredProducts = all.filter((product) => product.id !== id);
 
       if (all.length === filteredProducts.length) {
-        throw new Error("Producto no encontrado");
+        return null
       }
 
       await fs.promises.writeFile(
