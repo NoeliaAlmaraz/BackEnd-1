@@ -37,15 +37,22 @@
     "title": "producto2",
     "price": "125",
     "stock": "100",
-    "category": "zapatos",
-    "id": "643523a676cdaeb290ba4362"
-  },
-  {
-    "title": "producto2",
-    "price": "125",
-    "stock": "100",
-    "category": "camiseta",
+    "category": "ropa",
     "supplier": "none",
     "id": "eb5097d28322dddbb49c2aa8"
+  },
+  {
+    "title": "camiseta",
+    "price": "12",
+    "stock": "100",
+    "id": "cfae1526bb4658c06e8e916f"
+  },
+  {
+    "title": "camiseta",
+    "price": "125",
+    "stock": "100",
+    "category": "ropa",
+    "supplier": "nike",
+    "id": "f135aa0362f0540456604c7a"
   }
 ]
