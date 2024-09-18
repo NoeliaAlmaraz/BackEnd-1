@@ -1,6 +1,6 @@
 import productsManager from "../data/products.manager.js";
 
-async function getAllProducts(req, res) {
+async function getAllProducts(req, res, next) {
   try {
     //con esto condicionamos si existe la categoria, en ese caso se devuelve solo los productos con esa categoria
     let { category } = req.query;
@@ -20,7 +20,7 @@ async function getAllProducts(req, res) {
         .json({ mensaje: "No hay productos con esa categoría" });
     }
   } catch (error) {
-    return res.status(500).json({ mensaje: "Error" });
+    return next(error);
   }
 }
 
@@ -51,7 +51,7 @@ async function createGet(req, res) {
 }
 
 //esta si es la forma adecuada para crear un producto
-async function create(req, res) {
+async function create(req, res, next) {
   try {
     //guardo el objeto que envia el front con los datosd que se necesita crear
     const data = req.body;
@@ -60,11 +60,11 @@ async function create(req, res) {
       .status(201)
       .json({ mensaje: "Producto creado", responseManager });
   } catch (error) {
-    return res.status(500).json({ mensaje: "Error" });
+    return next(error);
   }
 }
 
-async function getOneProduct(req, res) {
+async function getOneProduct(req, res, next) {
   try {
     const { pid } = req.params;
     const product = await productsManager.read(pid);
@@ -74,11 +74,11 @@ async function getOneProduct(req, res) {
       return res.status(404).json({ mensaje: "Producto no encontrado" });
     }
   } catch (error) {
-    return res.status(500).json({ mensaje: "Error" });
+    return next(error);
   }
 }
 
-async function update(req, res) {
+async function update(req, res, next) {
   try {
     const { pid } = req.params;
     const newData = req.body;
@@ -90,11 +90,11 @@ async function update(req, res) {
       .status(200)
       .json({ mensaje: "Producto actualizado", responseManager });
   } catch (error) {
-    return res.status(500).json({ mensaje: "Error" });
+    return next(error);
   }
 }
 
-async function destroyProduct(req, res) {
+async function destroyProduct(req, res, next) {
   try {
     const { pid } = req.params;
     const responseManager = await productsManager.delete(pid);
@@ -102,14 +102,8 @@ async function destroyProduct(req, res) {
       .status(200)
       .json({ mensaje: "Producto eliminado", responseManager });
   } catch (error) {
-    return res.status(500).json({ mensaje: "Error" });
+    return next(error);
   }
 }
 
-export {
-  getAllProducts,
-  create,
-  getOneProduct,
-  update,
-  destroyProduct,
-};
+export { getAllProducts, create, getOneProduct, update, destroyProduct };

@@ -1,17 +1,15 @@
 import express from "express";
-import {
-  getAllProducts,
-  create,
-  getOneProduct,
-  update,
-  destroyProduct,
-} from "./src/controllers/products.controllers.js";
+import router from "./src/routers/index.router.js";
+import morgan from "morgan";
+import cors from "cors";
+import errorHandler from "./src/middlewares/errorHandler.mid.js";
+import pathHandler from "./src/middlewares/pathHandler.mid.js";
 
 try {
   const server = express();
   const port = 8000;
   const ready = () => console.log("Server ready");
-
+  server.listen(port, ready);
   //obliga al servidor a usar la habilidad de urlencoded en express para habilitar
   //  la lectura de datos complejos en la url(parametros y consultas)
   server.use(express.urlencoded({ extended: true }));
@@ -20,27 +18,20 @@ try {
   //recibir objetos en la propiedad req.body y ademas se aplica json en toda la aplicacion
   server.use(express.json());
 
-  server.listen(port, ready);
+  //morgan es un middleware de terceros que me permite ver los datos de la peticion y respuesta en la consola
+  server.use(morgan("dev"));
 
-  // definir una ruta para leer datos .get
-  server.get("/", index);
-  server.get("/api/products", getAllProducts);
-  // para crear .post
-  server.post("/api/products", create);
-  //server.get("/products/:title/:price/:stock", create);
-  server.get("/api/products/:pid", getOneProduct);
-  // para actualizar .put
-  server.put("/api/products/:pid", update);
-  // para borrar .delete
-  server.delete("/api/products/:pid", destroyProduct);
+  //cors es un middleware de terceros que me permite permitir la comunicacion entre el front y el back(incompatibilidad de puertos)
+  server.use(cors());
+
+  //Es un middleware que me permite manejar errores de manera mas eficiente
+  server.use(errorHandler);
+
+  //pathHandler es un middleware que me permite manejar los errores derutas de manera mas eficiente
+  server.use(pathHandler);
+
+  //obligo a mi servidor ha usar las rutas de los enrutadores
+  server.use(router);
 } catch (error) {
   console.log(error);
-}
-
-function index(req, res) {
-  try {
-    return res.status(200).json({ mensaje: "Hola" });
-  } catch (error) {
-    return res.status(500).json({ mensaje: "Error" });
-  }
 }

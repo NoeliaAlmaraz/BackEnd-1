@@ -54,5 +54,13 @@
     "category": "ropa",
     "supplier": "nike",
     "id": "f135aa0362f0540456604c7a"
+  },
+  {
+    "title": "sudadera",
+    "price": "65",
+    "stock": "100",
+    "category": "ropa",
+    "supplier": "adidas",
+    "id": "fa3760cb4fff05dca7ad1652"
   }
 ]
