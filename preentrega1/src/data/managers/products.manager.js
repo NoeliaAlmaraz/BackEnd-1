@@ -19,7 +19,7 @@ class ProductsManager {
   async createProducts(data) {
     try {
       data.id = crypto.randomBytes(12).toString("hex");
-      const allProducts = await this.readAll();
+      const allProducts = await this.readAllProducts();
       allProducts.push(data);
       await fs.promises.writeFile(
         this.path,
@@ -52,7 +52,7 @@ class ProductsManager {
 
   async readOneProducts(id) {
     try {
-      const allProducts = await this.readAll();
+      const allProducts = await this.readAllProducts();
       const oneProduct = allProducts.find((product) => product.id === id);
       return oneProduct;
     } catch (error) {
@@ -63,7 +63,7 @@ class ProductsManager {
 
   async updateProducts(id, updatedData) {
     try {
-      const allProducts = await this.readAll();
+      const allProducts = await this.readAllProducts();
       const index = allProducts.findIndex((product) => product.id === id);
       if (index < 0) {
         return null;
@@ -82,7 +82,7 @@ class ProductsManager {
 
   async deleteProduct(id) {
     try {
-      const allProducts = await this.readAll();
+      const allProducts = await this.readAllProducts();
       const filteredProducts = allProducts.filter(
         (product) => product.id !== id
       );

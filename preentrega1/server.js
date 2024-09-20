@@ -1,5 +1,7 @@
 import express from "express";
 import errorHandler from "./src/middlewares/errorHandler.mid.js";
+import pathHandler from "./src/middlewares/pathHandler.mid.js";
+import router from "./src/routers/index.router.js";
 
 try {
   const server = express();
@@ -9,7 +11,9 @@ try {
 
   server.use(express.urlencoded({ extended: true }));
   server.use(express.json());
+  server.use(router);
   server.use(errorHandler)
+  server.use(pathHandler);
 } catch (error) {
     console.log(error);
 }

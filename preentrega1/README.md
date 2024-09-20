@@ -76,6 +76,47 @@ En este proyecto se creará un servidor con Node.js y express para gestionar los
 Es el middleware que controla los errores. 
 Es el único middleware de express que depende de 4 parámetros: el error que está ocurriendo, el objeto de requerimientos, el objeto de respuesta a enviar al cliente y la función next para dejar pasar.
 Como sabemos que el error sucedió, le enviamos al cliente la respuesta correspondiente. En este caso se envía un json con un mensaje que tiene el método, el endpoint y el mensaje de error.
+Una vez que lo tenemos creado, debe ir en el archivo principal(server) después del errutamiento para que cada vez que haya un error, se active automaticamente el middleware.
+
+## IsValidData
+
+Es el middleware que se encarga de validar la entrada de datos para la creacion de productos y usuarios.
+Hay valores por defecto que no son obligatorios que el usuario ingrese y validación de formato de entrada de datos 
+
+## PathHandler
+
+Es el middleware que se encarga del manejo de ruta no encontrada.
+En este caso, con informar correctamente al cliente alcanza, es opcional mostrar por consola que no encuentra la ruta.
+Como sabemos que no se encontró la ruta, le enviamos al cliente la respuesta correspondiente. En este caso se envía un json con un mensaje que tiene el método, el endpoint y el mensaje de error.
+Y por último **(y debe ir a lo último)**, obligamos al servidor a que use el pathHandler en caso de que el error sea justamente que no existe el endpoint.
+
+## Routers
+
+Hay que crear la estructura de carpetas para los routers con su index router.
+
+        ```bash
+        ├── /routers
+        │   ├── index.router.js
+        │   ├── /api
+        │   │   ├── carts.api.js
+        │   │   ├── index.api.js
+        │   │   ├── products.api.js
+        │   │   └── users.api.js
+        │   │
+        │   └── /views
+        │       ├── carts.views.js
+        │       ├── index.views.js
+        │       ├── products.views.js
+        │       └── users.views.js
+
+        ```
+
+Esto se hace para que cada ruta tenga su propio archivo y que el index.router.js tenga todas las rutas y tener el control de las rutas.
+Cada una de estas carpetas tendrán un archivo “index” que serán los enrutadores “principales” que se conectarán con los enrutadores de cada recurso.
+
+
+
+
 
 
 

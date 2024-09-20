@@ -1,6 +1,5 @@
-import productsManager from "../data/managers/products.manager";
+
 import usersManager from "./../data/managers/users.manager.js";
-import { createServer } from "http";
 
 async function readAllUsers(req, res, next) {
   try {
@@ -12,7 +11,7 @@ async function readAllUsers(req, res, next) {
       users = await usersManager.readAllUsers();
     }
 
-    if (users.legth > 0) {
+    if (users.length > 0) {
       return res.status(200).json({ message: "Operational users", users });
     } else {
       return res

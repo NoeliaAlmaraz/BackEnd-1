@@ -10,7 +10,7 @@ async function readAllProducts(req, res, next) {
       products = await productsManager.readAllProducts();
     }
 
-    if (products.legth > 0) {
+    if (products.length > 0) {
       return res
         .status(200)
         .json({ message: "Operational products", products });

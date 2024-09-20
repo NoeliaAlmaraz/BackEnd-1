@@ -1,0 +1,18 @@
+[
+  {
+    "title": "sudadera",
+    "price": 65,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "51cc370a2e555b0153c134e3"
+  },
+  {
+    "title": "pantalon",
+    "price": 140,
+    "photo": "photo.jpg",
+    "stock": 1,
+    "category": "general",
+    "id": "8bb9573f0fc8f8060f18d44c"
+  }
+]
