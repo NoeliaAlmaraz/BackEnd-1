@@ -1,4 +1,5 @@
 import express from "express";
+import errorHandler from "./src/middlewares/errorHandler.mid.js";
 
 try {
   const server = express();
@@ -8,6 +9,7 @@ try {
 
   server.use(express.urlencoded({ extended: true }));
   server.use(express.json());
+  server.use(errorHandler)
 } catch (error) {
     console.log(error);
 }

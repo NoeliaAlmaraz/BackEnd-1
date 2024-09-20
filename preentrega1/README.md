@@ -54,6 +54,32 @@ En este proyecto se creará un servidor con Node.js y express para gestionar los
 3. Configuramos el servidor
 4. Iniciamos el servidor en la consola con el comando **npm run dev**
 
+## Creación de los **Managers**
+(Se centra en la lógica de negocio y gestión de datos.)
+
+1. En el directorio **src/data/managers** creamos los managers necesarios para la base de datos
+2. Se instancía la clase **ProductManager** y **userManager** con su constructor. y definiendo la ruta de guardado.
+3. Después del método exists() para comprobar que hay archivo donde poder almacenar los datos, se crea el archivo si no existe.
+4. Se crean los métodos **create**, **read**,**readAll**, **update** y **delete** para cada modelo.
+5. Por último se exportan los managers para que puedan ser usados en otros archivos.
+
+## Creación de los **controllers**
+(Maneja las peticiones HTTP y delega la lógica de negocio a los managers o servicios.)
+
+1. En el directorio **src/controllers** creamos los controllers necesarios para la base de datos.
+2. Se crea cada función para controlar los métodos de los managers y los requerimientos necesarios para completarlas.
+3. Se gestionan los estados de exito y errores con errorHandler para las peticiones de usuario
+4. Se exportan las funciones.
+
+## ErrorHandler
+
+Es el middleware que controla los errores. 
+Es el único middleware de express que depende de 4 parámetros: el error que está ocurriendo, el objeto de requerimientos, el objeto de respuesta a enviar al cliente y la función next para dejar pasar.
+Como sabemos que el error sucedió, le enviamos al cliente la respuesta correspondiente. En este caso se envía un json con un mensaje que tiene el método, el endpoint y el mensaje de error.
+
+
+
+
 
 
    
