@@ -7,8 +7,8 @@ const apiRouter = Router();
 
 
   apiRouter.use("/products", productsApiRouter);
-  apiRouter.use("carts", cartsApiRouter);
-  apiRouter.use("users", usersApiRouter);
+  apiRouter.use("/carts", cartsApiRouter);
+  apiRouter.use("/users", usersApiRouter);
 
 
 export default apiRouter;

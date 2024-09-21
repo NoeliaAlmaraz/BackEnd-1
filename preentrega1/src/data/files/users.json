@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "email": "noelia@gmail.com",
+    "password": "njmkijuyghbjh",
+    "photo": "photo.jpg",
+    "role": "user",
+    "id": "2f75fe42e65d5bfe66a61e1a"
+  },
+  {
+    "email": "maria@gmail.com",
+    "password": "njmkijuyghbjh",
+    "photo": "photo.jpg",
+    "role": "user",
+    "id": "b1201bfb1fe55be9c71b2603"
+  },
+  {
+    "email": "juan@gmail.com",
+    "password": "dgfgvbhnjkhuygt",
+    "photo": "photo.jpg",
+    "role": "admin",
+    "id": "7ec5a7b55247232015e60bf0"
+  },
+  {
+    "email": "claudia@gmail.com",
+    "password": "hsfnjcxmvdkaf",
+    "photo": "photo.jpg",
+    "role": "admin",
+    "id": "12272518e0683d80a481fb28"
+  },
+  {
+    "email": "rocio@gmail.com",
+    "password": "cbnskjvghj",
+    "photo": "photo.jpg",
+    "role": "user",
+    "id": "3d44d27a347a8b34b0ad24f4"
+  }
+]

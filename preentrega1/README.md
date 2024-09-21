@@ -114,6 +114,68 @@ Hay que crear la estructura de carpetas para los routers con su index router.
 Esto se hace para que cada ruta tenga su propio archivo y que el index.router.js tenga todas las rutas y tener el control de las rutas.
 Cada una de estas carpetas tendrán un archivo “index” que serán los enrutadores “principales” que se conectarán con los enrutadores de cada recurso.
 
+## Middlewares
+
+Los middlewares son una forma de agregar funcionalidad a las rutas. Los middlewares se encargan de realizar tareas específicas antes o después de que una ruta se ejecute.
+ - **MORGAN**: es un middleware para Node.js que se utiliza en el backend para registrar (loggear) las solicitudes HTTP que recibe un servidor. Es particularmente útil para monitorear y depurar el tráfico en aplicaciones Express, proporcionando información detallada sobre cada solicitud entrante. Se instala mediante el comando npm install morgan y configuración se hace en el archivo server.js.
+ - **CORS**: es un middleware que se utiliza para permitir la comunicación entre el front y el back(incompatibilidad de puertos). Se instala mediante el comando npm install cors y configuración se hace en el archivo server.js.
+
+## POSTMAN 
+
+Para poder probar la aplicación, se utiliza Postman. Postman es una herramienta de desarrollo de APIs que permite realizar llamadas HTTP, código de API, pruebas de integración y pruebas de funcionalidad.
+
+1. Crear una nueva petición GET para método **readAllProducts** y **readAllUsers**
+
+    - url : localhost:8000/api/products o si se quiere filtrar por categoría localhost:8000/api/products?category=ropa
+    ![getReadAllProducts](./assets/img/getReadAllProducts.png)
+    ![getReadAllProductswithCategory](./assets/img/getReadAllProductsCategory.png)
+
+    - url : localhost:8000/api/users o si se quiere filtrar por role localhost:8000/api/users?role=user
+    ![getReadAllUsers](./assets/img/getReadAllusers.png)
+    ![getReadAllUserswithRole](./assets/img/getReadAllusersRole.png)
+
+
+2. Crear una nueva petición GET para método **readOneProducts** y **readOneUsers**
+
+    - url : localhost:8000/api/products/:pid y poner el id del producto en params
+    ![getReadOneProducts](./assets/img/getReadOneProducts.png)
+    - url : localhost:8000/api/users/:uid y poner el id del usuario en params
+    ![getReadOneUsers](./assets/img/getReadOneUsers.png)
+
+3. Crear una nueva petición POST para método **createProducts** y **createUsers**
+
+    - url : localhost:8000/api/products, luego seleccionar el método POST y enviar el body con los datos de la nueva producto
+    ![postCreateProducts](./assets/img/postProductsValid.png)
+    y si el producto no tiene los parametros requeridos, se devuelve el error 400
+    ![postCreateProductsError](./assets/img/postProductsNotValid.png)
+
+    - url : localhost:8000/api/users, luego seleccionar el método POST y enviar el body con los datos de la nueva usuario
+    ![postCreateUsers](./assets/img/postUsersValid.png)
+    y si el usuario no tiene los parametros requeridos, se devuelve el error 400
+    ![postCreateUsersError](./assets/img/postUsersNotValid.png)
+
+4. Crear una nueva petición PUT para método **updateProducts** y **updateUsers**
+
+    - url : localhost:8000/api/products/:pid  luego seleccionar el método PUT, en params agregar el id del producto y enviar el body con los datos de la nueva producto
+    ![putUpdateProducts](./assets/img/updateProducts.png)
+
+    - url : localhost:8000/api/users/:uid  luego seleccionar el método PUT, en params agregar el id del usuario y enviar el body con los datos de la nueva usuario
+    ![putUpdateUsers](./assets/img/updateUsers.png)
+
+5. Crear una nueva petición DELETE para método **destroyProduct** y **destroyUsers**
+
+    - url : localhost:8000/api/products/:pid y poner el id del producto en params
+    ![deleteDestroyProduct](./assets/img/deleteProducts.png)
+
+    - url : localhost:8000/api/users/:uid y poner el id del usuario en params
+    ![deleteDestroyUser](./assets/img/deleteUsers.png)
+
+
+
+
+
+
+
 
 
 

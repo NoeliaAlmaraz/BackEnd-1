@@ -14,5 +14,357 @@
     "stock": 1,
     "category": "general",
     "id": "8bb9573f0fc8f8060f18d44c"
+  },
+  {
+    "title": "sudadera",
+    "price": 40,
+    "stock": 120,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "4d4dabc3e23ad97b15bec5b3"
+  },
+  {
+    "title": "sandalias",
+    "price": 80,
+    "stock": 120,
+    "category": "zapatos",
+    "photo": "photo.jpg",
+    "id": "4f5733a55e3095a6727263f1"
+  },
+  {
+    "title": "deportivas",
+    "price": 90,
+    "stock": 100,
+    "category": "zapatos",
+    "photo": "photo.jpg",
+    "id": "981ee9db566f5388b977d42a"
+  },
+  {
+    "title": "chanclas",
+    "price": 30,
+    "stock": 100,
+    "category": "zapatos",
+    "photo": "photo.jpg",
+    "id": "398bf9079340a3740f3dc634"
+  },
+  {
+    "title": "tacones",
+    "price": 45,
+    "stock": 180,
+    "category": "zapatos",
+    "photo": "photo.jpg",
+    "id": "b4d0d53f48fc4822b9e75daf"
+  },
+  {
+    "title": "calcetines",
+    "price": 15,
+    "stock": 180,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "990de5a584754fd519dad06d"
+  },
+  {
+    "title": "calzoncillos",
+    "price": 7,
+    "stock": 180,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "e3661e3afc54045d61edb7aa"
+  },
+  {
+    "title": "bragas",
+    "price": 9,
+    "stock": 130,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "b2cc036b3caae8ea10bd9f6d"
+  },
+  {
+    "title": "bragas",
+    "price": 9,
+    "photo": "photo.jpg",
+    "stock": 1,
+    "category": "general",
+    "id": "11650820b23417934015a690"
+  },
+  {
+    "title": "chaqueta",
+    "price": 60,
+    "photo": "photo.jpg",
+    "stock": 1,
+    "category": "general",
+    "id": "b016456840e54b3325c47a32"
+  },
+  {
+    "title": "abrigo",
+    "price": 100,
+    "stock": 80,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "31f1e41105538e4bdd4ce969"
+  },
+  {
+    "title": "vaquero corto",
+    "price": 45,
+    "stock": 170,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "df6596065f78a1cc1ec45406"
+  },
+  {
+    "title": "zapatillas ",
+    "price": 70,
+    "stock": 120,
+    "category": "zapatos",
+    "photo": "photo.jpg",
+    "id": "ee7637b97e263059b5a92f11"
+  },
+  {
+    "title": "chanclas cuero ",
+    "price": 70,
+    "stock": 120,
+    "category": "zapatos",
+    "photo": "photo.jpg",
+    "id": "c69f7f994c0c8820ddae17bd"
+  },
+  {
+    "title": "sandalias altas ",
+    "price": 70,
+    "stock": 120,
+    "category": "zapatos",
+    "photo": "photo.jpg",
+    "id": "c91945db0071ed2b7bda2eab"
+  },
+  {
+    "title": "camiseta tirantes",
+    "price": 20,
+    "stock": 90,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "9cd903b700152bdbdfcf4f07"
+  },
+  {
+    "title": "camiseta overside",
+    "price": 40,
+    "stock": 130,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "521457fadfece6de5a0fbdc0"
+  },
+  {
+    "title": "jersey",
+    "price": 35,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "34786f4633cdd3ed0575fa54"
+  },
+  {
+    "title": "blusa",
+    "price": 22,
+    "stock": 50,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "c6c2bca34b4d25742be0c548"
+  },
+  {
+    "title": "bañador",
+    "price": 30,
+    "stock": 80,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "499e073594b5ef75437ad95c"
+  },
+  {
+    "title": "bikini",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "aacc22c36fefdbb9cd5c2fee"
+  },
+  {
+    "title": "sudadera",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "f044e94a1091209ebae70834"
+  },
+  {
+    "title": "camiseta",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "26b01f47f3cd60f68a116ac0"
+  },
+  {
+    "title": "pantalon",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "358cf035ac4a2970ed7c1c3e"
+  },
+  {
+    "title": "tobillera",
+    "price": 40,
+    "stock": 100,
+    "category": "accesorios",
+    "photo": "photo.jpg",
+    "id": "cbb3269b5685c42084039ec1"
+  },
+  {
+    "title": "anillo",
+    "price": 40,
+    "stock": 100,
+    "category": "accesorios",
+    "photo": "photo.jpg",
+    "id": "ea6e6e835857775794a4ad55"
+  },
+  {
+    "title": "gafas de sol",
+    "price": 40,
+    "stock": 100,
+    "category": "accesorios",
+    "photo": "photo.jpg",
+    "id": "712cecd296b0f6789029039e"
+  },
+  {
+    "title": "collar oro",
+    "price": 40,
+    "stock": 100,
+    "category": "accesorios",
+    "photo": "photo.jpg",
+    "id": "8068deff4798ac6b692741de"
+  },
+  {
+    "title": "collar plata",
+    "price": 40,
+    "stock": 100,
+    "category": "accesorios",
+    "photo": "photo.jpg",
+    "id": "4f8323c27f5cff9afbc4b316"
+  },
+  {
+    "title": "pulsera corazon",
+    "price": 40,
+    "stock": 100,
+    "category": "accesorios",
+    "photo": "photo.jpg",
+    "id": "5e12d57ba239bb1958ee29af"
+  },
+  {
+    "title": "pulsera acero",
+    "price": 40,
+    "stock": 100,
+    "category": "accesorios",
+    "photo": "photo.jpg",
+    "id": "e61e9ea457ec92cc69f188b2"
+  },
+  {
+    "title": "pulsera",
+    "price": 40,
+    "stock": 100,
+    "category": "accesorios",
+    "photo": "photo.jpg",
+    "id": "be73a5c4dd3fcfb877f29dd0"
+  },
+  {
+    "title": "pendiente largo",
+    "price": 40,
+    "stock": 100,
+    "category": "accesorios",
+    "photo": "photo.jpg",
+    "id": "721c22831359fba35017c35e"
+  },
+  {
+    "title": "pendiente",
+    "price": 40,
+    "stock": 100,
+    "category": "accesorios",
+    "photo": "photo.jpg",
+    "id": "63a13558650652949f89a3cc"
+  },
+  {
+    "title": "camisa verde",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "841449c38f16eb85d9255de0"
+  },
+  {
+    "title": "traje gris",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "0e6c1f34eac435160e1968c4"
+  },
+  {
+    "title": "americana",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "1dd5d3cad16e53b26e3cbdd4"
+  },
+  {
+    "title": "chandal",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "7efccab95e5e06bc6824d6f2"
+  },
+  {
+    "title": "camiseta negra",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "6bf6851e2e008c2cef2dae0f"
+  },
+  {
+    "title": "camiseta verde",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "cad0565e5310e6b19206f585"
+  },
+  {
+    "title": "pantalon verde",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "1fd0e7f809f193dd212a3712"
+  },
+  {
+    "title": "sudadera verde",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "4b373750616121139f2db24c"
+  },
+  {
+    "title": "chaqueta verde",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "73d5aa0c44134969689805ba"
+  },
+  {
+    "title": "gorro",
+    "price": 40,
+    "stock": 100,
+    "category": "ropa",
+    "photo": "photo.jpg",
+    "id": "120bc02f4006db3b3447689b"
   }
 ]
