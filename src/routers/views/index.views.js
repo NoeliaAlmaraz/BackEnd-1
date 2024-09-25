@@ -8,5 +8,12 @@ const viewsRouter = Router();
 viewsRouter.use("/products", productsViewsRouter);
 viewsRouter.use("/carts", cartsViewsRouter);
 viewsRouter.use("/users", usersViewsRouter);
+viewsRouter.get("/", (req, res, next) => {
+  try {
+    return res.render("index");
+  } catch (error) {
+    return next(error);
+  }
+});
 
 export default viewsRouter;

@@ -1,0 +1,21 @@
+<h2>Details of product</h2>
+<article>
+<div class="card" style="width: 18rem;">
+      <img src="{{photo}}" class="card-img-top" alt="image products" />
+      <div class="card-body">
+        <h5 class="card-title">{{#if data.title}}
+          {{data.title}}
+        {{else}}
+         Not title
+        {{/if}}
+        </h5>
+        <p class="card-text">${{data.price}}</p>
+        <p class="card-text">{{data.stock}}</p>
+        <p class="card-text">{{data.id}}</p>
+
+      </div>
+    </div>
+
+</article>
+
+

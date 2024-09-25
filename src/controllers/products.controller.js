@@ -81,10 +81,49 @@ async function destroyProduct(req, res, next) {
   }
 }
 
+async function showProducts(req, res, next) {
+  try {
+    let { category } = req.query;
+    let products;
+    if (category) {
+      products = await productsManager.readAllProducts(category);
+    } else {
+      products = await productsManager.readAllProducts();
+    }
+
+    if (products.length > 0) {
+      return res
+      .render("products", {data: products})
+    } else {
+      return res
+        .status(404)
+        .json({ message: "There are no products with that category" });
+    }
+  } catch (error) {
+    return next(error);
+  }
+}
+
+async function showOneProducts(req, res, next) {
+  try {
+    const { pid } = req.params;
+    const product = await productsManager.readOneProducts(pid);
+    if (product) {
+      return res.render("oneproduct", {data: product});
+    } else {
+      return res.status(404).json({ message: "Product not found" });
+    }
+  } catch (error) {
+    return next(error);
+  }
+}
+
 export {
   readAllProducts,
   readOneProducts,
   createProducts,
   updateProducts,
   destroyProduct,
+  showProducts,
+  showOneProducts,
 };

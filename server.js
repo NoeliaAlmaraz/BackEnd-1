@@ -17,6 +17,7 @@ try {
   server.use(express.json());
   server.use(morgan("dev"));
   server.use(cors());
+  server.use("/public",express.static(__dirname + '/public'));
 
   server.engine('handlebars', engine())
   server.set('view engine', 'handlebars')
