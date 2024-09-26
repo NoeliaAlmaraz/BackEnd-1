@@ -1,4 +1,3 @@
-
 import usersManager from "./../data/managers/users.manager.js";
 
 async function readAllUsers(req, res, next) {
@@ -80,4 +79,32 @@ async function registerView(req, res, next) {
   }
 }
 
-export { readAllUsers, readOneUsers, createUsers, updateUsers, destroyUser, registerView };
+async function showUsers(req, res, next) {
+  try {
+    const users = await usersManager.readAllUsers();
+    return res.render("users", { data: users });
+  } catch (error) {
+    return next(error);
+  }
+}
+
+async function showOneUsers(req, res, next) {
+  try {
+    const { uid } = req.params;
+    const oneUser = await usersManager.readOneUsers(uid);
+    return res.render("oneuser", { oneUser });
+  } catch (error) {
+    return next(error);
+  }
+}
+
+export {
+  readAllUsers,
+  readOneUsers,
+  createUsers,
+  updateUsers,
+  destroyUser,
+  registerView,
+  showOneUsers,
+  showUsers,
+};

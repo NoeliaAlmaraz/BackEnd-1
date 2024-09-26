@@ -1,9 +1,12 @@
 import { Router } from "express";
-import { registerView } from "../../controllers/users.controller.js";
-import isValidDataMid from "../../middlewares/isValidData.mid.js";
+import { registerView,showOneUsers,showUsers } from "../../controllers/users.controller.js";
+
 
 const usersViewsRouter = Router();
 
-usersViewsRouter.get("/register",isValidDataMid.validUsers, registerView);
+usersViewsRouter.get("/register", registerView);
+usersViewsRouter.get("/:uid", showOneUsers);
+usersViewsRouter.get("/", showUsers);
+
 
 export default usersViewsRouter;  

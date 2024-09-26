@@ -1,0 +1,24 @@
+<h2>Users</h2>
+<section class="d-flex flex-wrap justify-content-evenly">
+  {{#each data}}
+    <div class="card my-2" style="width: 18rem;">
+      <img src="{{photo}}" class="card-img-top" alt="image products" />
+      <div class="card-body">
+        <h5 class="card-title">{{#if this.name}}
+            {{this.name}}
+          {{else}}
+            Not name
+          {{/if}}
+        </h5>
+        <p class="card-text">{{this.email}}</p>
+        <p class="card-text">{{this.role}}</p>
+        <p class="card-text">{{this.id}}</p>
+      </div>
+      <a href="/users/{{this.id}}">
+        <button type="button" class="btn btn-outline-success">Details user</button>
+      </a>
+
+    </div>
+
+  {{/each}}
+</section>
