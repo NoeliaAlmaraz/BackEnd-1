@@ -6,12 +6,18 @@ import morgan from "morgan";
 import cors from "cors";
 import { engine } from "express-handlebars";
 import __dirname from './utils.js'
+import { Server } from 'socket.io'
+import {createServer} from 'http'
+import socketCb from './src/routers/index.socket.js'
 
 try {
   const server = express();
   const port = 8000;
   const ready = () => console.log("Server ready");
-  server.listen(port, ready);
+  const httpServer = createServer(server);
+  const tcpServer = new Server(httpServer); 
+  tcpServer.on('connection',socketCb)
+  httpServer.listen(port, ready);
 
   server.use(express.urlencoded({ extended: true }));
   server.use(express.json());
@@ -25,7 +31,7 @@ try {
 
   server.use(router);
   server.use(errorHandler)
-  server.use(pathHandler);
+  server.use(pathHandler); 
 } catch (error) {
     console.log(error);
 }

@@ -23,7 +23,7 @@ class UsersManager {
             const allUsers = await this.readAllUsers();
             allUsers.push(data);
             await fs.promises.writeFile(this.path, JSON.stringify(allUsers, null, 2));
-            return data.id;
+            return data;
         } catch (error) {
             console.log(error);
             throw error;

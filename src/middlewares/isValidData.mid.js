@@ -23,31 +23,37 @@ function validProducts(req, res, next) {
 }
 
 function validUsers(req, res, next) {
-  try {
-    const { email, password } = req.body;
-    let { photo, role } = req.body;
+  // Solo validar si es una solicitud POST
+  if (req.method === 'POST') {
+    try {
+      const { email, password } = req.body;
+      let { photo, role } = req.body;
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email || !password) {
-      const error = new Error(
-        "the email and password parameters are mandatory"
-      );
-      error.statusCode = 400;
-      throw error;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email || !password) {
+        const error = new Error(
+          "the email and password parameters are mandatory"
+        );
+        error.statusCode = 400;
+        throw error;
+      }
+      if (!emailRegex.test(email)) {
+        const error = new Error("Invalid email format");
+        error.statusCode = 400;
+        throw error;
+      }
+
+      // Asignar valores por defecto
+      role = role !== undefined ? role : "user";
+      photo = photo !== undefined ? photo : "https://cdn-icons-png.flaticon.com/512/219/219969.png";
+      req.body = { ...req.body, photo, role };
+
+      return next();
+    } catch (error) {
+      return next(error);
     }
-    if (!emailRegex.test(email)) {
-      const error = new Error("Invalid email format");
-      error.statusCode = 400;
-      throw error;
-    }
-
-    role = role !== undefined ? role : 0;
-    photo = photo !== undefined ? photo : "no-photo.jpg";
-    req.body = { ...req.body, photo, role };
-
+  } else {
     return next();
-  } catch (error) {
-    return next(error);
   }
 }
 
