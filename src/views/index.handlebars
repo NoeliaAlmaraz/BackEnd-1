@@ -1,6 +1,30 @@
-<h1>Hello World</h1>
-<p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias earum
-  officia ratione, delectus molestiae optio mollitia est iste nobis quidem id
-  assumenda dolorem autem corrupti architecto blanditiis aliquam. Molestiae!
-</p>
+<h1 class="my-3">CHAT</h1>
+<section class="m-4 bg-dark w-50 p-1">
+  <article id="messages" class="m-4 bg-dark w-50 p-1">
+    <p class="bg-white p-1 m-2">
+      aquí se va a renderizar todos los mensajes
+    </p>
+    <p class="bg-white p-1 m-2">
+      aquí se va a renderizar todos los mensajes
+    </p>
+    <p class="bg-white p-1 m-2">
+      aquí se va a renderizar todos los mensajes
+    </p>
+    <p class="bg-white p-1 m-2">
+      aquí se va a renderizar todos los mensajes
+    </p>
+
+  </article>
+  <span class="bg-white p-1 m-2" id="username"></span>
+  <input
+    class="bg-white p-1 m-2"
+    type="text"
+    name=" text"
+    id="text"
+    placeholder="Escribe un mensaje"
+  />
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="/public/scripts/socket.js"></script>

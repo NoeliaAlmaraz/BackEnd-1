@@ -1,19 +1,22 @@
-import usersManager from "../data/managers/users.manager.js";
-import isValidDataMid from "../middlewares/isValidData.mid.js";
-
-const socketCb = async (socket) => {
-    console.log("socket connected id; "+socket.id)
-    socket.on("registerUsers", async (usersdata) => {
-        console.log(usersdata)
-        const validatedData = isValidDataMid.validateUserData(usersdata);
+import { socketServer } from "../../server.js";
 
 
-        const responseManager = await usersManager.createUsers(validatedData);
-        const allUsers = await usersManager.readAllUsers();
-        socket.emit("updateUsers", allUsers); // Emitir la lista de usuarios
-    })
-    const allUsers = await usersManager.readAllUsers()
-    socket.emit("updateUsers", allUsers)
+let allMesagges = [{
+        username: "noelia",
+        message: "Inicio del chat"
 }
 
-export default socketCb
+];
+
+const socketCb = (socket) => {
+    console.log(socket.id);
+    socket.emit("all messages", [...allMesagges].reverse().slice(0,10).reverse());
+
+    socket.on("send message", (text) => {
+        allMesagges.push(text);
+        socketServer.emit("all messages", [...allMesagges].reverse().slice(0,10).reverse());
+    })
+}
+     
+
+export default socketCb;
