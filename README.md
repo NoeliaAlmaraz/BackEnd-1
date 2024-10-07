@@ -224,7 +224,7 @@ Hemos implementado una lógica de programación que permite renderizar HTML de m
 
 2. **localhost:8080/products**
     Se muestra la pantalla de productos del comercio con la barra de navegacion y el footer mas el filtro por categoria.
-     ![productsViews](./assets/img/produtsViews.png){ width=500 }
+     ![productsViews](./assets/img/productsViews.png){ width=500 }
 
 3. **localhost:8080/products/admin**
     Se muestra la vista de dasboard donde se pueden crear, editar y borrar productos. Para acceder a esta ruta puede ponerla directamente en la barra de navegacion o si haces login con cualquier usuario, se muestra en el navbar la opcion "Dashboard".
