@@ -3,7 +3,7 @@
     "title": "Harry Potter and the Sorcerer's Stone",
     "author": "J.K. Rowling",
     "price": 15.99,
-    "stock": 120,
+    "stock": "80",
     "category": "Fantasy",
     "photo": "https://covers.openlibrary.org/b/id/7654618-L.jpg",
     "id": "bd623bc04b2f709b97d0af45"
@@ -12,7 +12,7 @@
     "title": "The Grapes of Wrath",
     "author": "John Steinbeck",
     "price": 12.49,
-    "stock": 60,
+    "stock": "80",
     "category": "Adventure",
     "photo": "https://covers.openlibrary.org/b/id/8141199-L.jpg",
     "id": "72bc23a214a10043547889b4"
@@ -315,12 +315,138 @@
     "id": "a3c0d4b0fc7113d35a39adad"
   },
   {
-    "title": "The Song of Achilles",
-    "author": "Madeline Miller",
-    "price": 12.48,
-    "stock": 90,
+    "title": "The Shadow of the Wind",
+    "author": "Carlos Ruiz Zafón",
+    "price": "14.99",
+    "stock": "80",
+    "category": "Mystery",
+    "photo": "https://covers.openlibrary.org/b/id/10151235-L.jpg",
+    "id": "29459fcbed4b65c4b4b75bac"
+  },
+  {
+    "title": "Pachinko",
+    "author": "Min Jin Lee",
+    "price": "16.99",
+    "stock": "100",
+    "category": "Historical Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10082140-L.jpg",
+    "id": "9397940059d73ecd5276e1f8"
+  },
+  {
+    "title": "The Nightingale",
+    "author": "Kristin Hannah",
+    "price": "12.99",
+    "stock": "70",
+    "category": "Historical Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10202623-L.jpg",
+    "id": "3c57f1f57b1f419f35c462a4"
+  },
+  {
+    "title": "The Vanishing Half",
+    "author": "The Vanishing Half",
+    "price": "14.49",
+    "stock": "90",
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10775816-L.jpg",
+    "id": "94ef9896d495e0cb49eea437"
+  },
+  {
+    "title": "The Woman in Cabin 10",
+    "author": "Ruth Ware",
+    "price": "11.99",
+    "stock": "50",
+    "category": "Thriller",
+    "photo": "https://covers.openlibrary.org/b/id/15218083-L.jpg",
+    "id": "7c86291624752b4c4c6ede5a"
+  },
+  {
+    "title": "The Overstory",
+    "author": "Richard Powers",
+    "price": "11.99",
+    "stock": "100",
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10554101-L.jpg",
+    "id": "413e56fdd1a648d5126b8c9e"
+  },
+  {
+    "title": "Malibu Rising",
+    "author": "Taylor Jenkins Reid",
+    "price": "15.49",
+    "stock": "100",
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/13663993-L.jpg",
+    "id": "f21028891ba07186b7321672"
+  },
+  {
+    "title": "A Man Called Ove",
+    "author": "Fredrik Backman",
+    "price": "12.99",
+    "stock": "60",
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/9707394-L.jpg",
+    "id": "e18741080c2c171e32e6c195"
+  },
+  {
+    "title": "A Man Called Ove",
+    "author": "Fredrik Backman",
+    "price": "12.99",
+    "stock": "60",
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/9707394-L.jpg",
+    "id": "fe58ed11aa529b96b3c32614"
+  },
+  {
+    "title": "A Man Called Ove",
+    "author": "Fredrik Backman",
+    "price": "12.99",
+    "stock": "60",
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/9707394-L.jpg",
+    "id": "a9d24398424e615aa8987177"
+  },
+  {
+    "title": "The Last Thing He Told Me",
+    "author": "Laura Dave",
+    "price": "13.49",
+    "stock": "80",
+    "category": "Thriller",
+    "photo": "https://covers.openlibrary.org/b/id/12345678-L.jpg",
+    "id": "06fd589ed81c0b133ca72362"
+  },
+  {
+    "title": "The Last Thing He Told Me",
+    "author": "Laura Dave",
+    "price": "13.49",
+    "stock": "80",
+    "category": "Thriller",
+    "photo": "https://covers.openlibrary.org/b/id/12345678-L.jpg",
+    "id": "9ad9ce8159136a4674823a93"
+  },
+  {
+    "title": "The Last Thing He Told Me",
+    "author": "Laura Dave",
+    "price": "13.49",
+    "stock": "80",
+    "category": "Thriller",
+    "photo": "https://covers.openlibrary.org/b/id/12345678-L.jpg",
+    "id": "921492cacd28d41d64bd6908"
+  },
+  {
+    "title": "The Last Thing He Told Me",
+    "author": "Laura Dave",
+    "price": "13.49",
+    "stock": "80",
+    "category": "Thriller",
+    "photo": "https://covers.openlibrary.org/b/id/12345678-L.jpg",
+    "id": "6c19eabf5e135d7ad9d2a124"
+  },
+  {
+    "title": "The City We Became",
+    "author": "N.K. Jemisin",
+    "price": "18.99",
+    "stock": "100",
     "category": "Fantasy",
-    "photo": "https://covers.openlibrary.org/b/id/10403001-L.jpg",
-    "id": "e09b7cf2fbd0f5ee7f7f4e80"
+    "photo": "https://covers.openlibrary.org/b/id/12948548-L.jpg",
+    "id": "1d4a3eca9c71e1ba815a846d"
   }
 ]

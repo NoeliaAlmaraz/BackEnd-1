@@ -94,10 +94,10 @@ async function loginUsers(req, res, next) {
     }
 
     if (email === user.email && password === user.password) {
-      user.isOnline = true;  // Establecer el usuario como conectado
+      user.isOnline = true; 
       const updateOnline = await usersManager.updateUser(user.id, { isOnline: true });
 
-      return res.render("myprofile", { layout: "main", user });
+      return res.redirect("/");
     } else {
       return res.redirect("/users/login?error=Invalid email or password");
     }
@@ -126,8 +126,8 @@ async function logoutUsers(req, res, next) {
 
 async function loginView(req, res, next) {
   try {
-    const error = req.query.error; // Obtiene el mensaje de error de la consulta
-    return res.render("login", { error }); // Pasa el mensaje de error a la vista
+    const error = req.query.error; 
+    return res.render("login", { error }); 
   } catch (error) {
     return next(error);
   }
@@ -177,28 +177,6 @@ async function readOneUsersViews(req, res, next) {
   }
 }
 
-async function getOnlineUsers() {
-  try {
-    const response = await fetch('/api/users');
-    console.log( response);
-    if (!response.ok) {
-      throw new Error('Error al obtener los usuarios');
-    }
-
-    const allUsers = await response.json(); 
-    const onlineUsers = allUsers.filter(user => user.isOnline); 
-
-    if (onlineUsers.length > 0) {
-      return onlineUsers; 
-    } else {
-      return false
-    }
-  } catch (error) {
-    console.error('Error:', error);
-    return null; // Puedes devolver null o manejar el error de otra manera
-  }
-}
-
 export {
   readAllUsers,
   readOneUsers,
@@ -210,6 +188,5 @@ export {
   loginView,
   registerUsers,
   createUsersViews,
-  readOneUsersViews,
-  getOnlineUsers
+  readOneUsersViews
 };

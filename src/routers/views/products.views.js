@@ -5,6 +5,7 @@ import isValidData from "../../middlewares/isValidData.mid.js";
 
 const productsViewsRouter = Router();
 
+
 productsViewsRouter.get("/", showProducts);
 productsViewsRouter.get("/admin",showProductsAdmin);
 productsViewsRouter.post("/create",isValidData.validProducts,createProductViews);

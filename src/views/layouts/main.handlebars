@@ -46,10 +46,12 @@
             >Products</a>
           </div>
           <div class="navbar-nav ms-auto">
-            {{#if req.onlineUsers.isOnline}}
-              <a class="nav-link active" href="/users/myprofile/{{onlineUsers.id}}">My
+            {{#if onlineUsers.length}}
+                {{#each onlineUsers}}
+              <a class="nav-link active" href="/users/myprofile/{{id}}">My
                 Profile</a>
               <a class="nav-link active" href="/products/admin">Dashboard</a>
+              {{/each}}
             {{else}}
               <a
                 class="nav-link active"

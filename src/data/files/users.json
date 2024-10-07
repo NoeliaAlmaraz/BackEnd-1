@@ -114,6 +114,15 @@
     "photo": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
     "role": "user",
     "id": "a4e8df8cacb44c117d0b6969",
-    "isOnline": true
+    "isOnline": false
+  },
+  {
+    "name": "maria luisa",
+    "email": "marialuisa@gmail.com",
+    "password": "sahivchuvijcdf",
+    "phone": "Not phone",
+    "photo": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
+    "role": "user",
+    "id": "d4d5c7d04b9829fb70357c45"
   }
 ]
