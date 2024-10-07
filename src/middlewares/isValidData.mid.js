@@ -29,6 +29,8 @@ function validProducts(req, res, next) {
 }
 
 
+
+
 function validUsers(req, res, next) {
   // Solo validar si es una solicitud POST
   if (req.method === 'POST') {
