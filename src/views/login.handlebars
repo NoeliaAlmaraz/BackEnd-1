@@ -1,0 +1,24 @@
+{{#if successMessageRegister}}
+  <script>
+    Swal.fire({
+      icon: 'success',
+      title: 'Success',
+      text: '{{successMessage}}',
+      showConfirmButton: true,
+    });
+  </script>
+{{/if}}
+
+<form method="POST" action="/users/login" class="d-flex flex-column align-items-center">
+  <h1>Login Form</h1>
+  <input class="mb-2" type="text" name="email" placeholder="Email" required />
+  <input class="mb-2" type="password" name="password" placeholder="Password" required />
+  <button class="btn btn-outline-success" type="submit">Login</button>
+  {{#if error}}
+    <p style="color: red;">{{error}}</p>
+  {{/if}}
+  
+</form>
+
+
+

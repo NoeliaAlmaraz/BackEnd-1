@@ -1,0 +1,20 @@
+
+  <h2 class="text-center mt-3 mb-3">Details of product</h2>
+  <article class="d-flex justify-content-center align-items-center vw-100" style="width: 18rem;">
+    <div class="card-item my-2 " style="width: 16rem;">
+      <img src="{{data.photo}}" class="card-img-top my-3" alt="image products" />
+      <div class="card-body">
+        <h4 class="card-title">{{#if data.title}}
+            {{data.title}}
+          {{else}}
+            Not title
+          {{/if}}
+        </h4>
+        <p class="card-text mb-1">Author: {{data.author}}</p>
+        <p class="card-text mb-1">Category: {{data.category}}</p>
+        <p class="card-text mb-1">${{data.price}}</p>
+        <p class="card-text mb-1">Stock: {{data.stock}}</p>
+
+      </div>
+    </div>
+  </article> 

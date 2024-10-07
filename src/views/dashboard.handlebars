@@ -1,0 +1,148 @@
+{{#if successMessage}}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        title: '¡Success!',
+        text: '{{successMessage}}',
+        icon: 'success',
+        confirmButtonText: 'Accept',
+        showCloseButton: true,
+        closeButtonAriaLabel: 'Cerrar'
+      });
+    });
+  </script>
+{{/if}}
+
+  {{#if errorMessage}} 
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        Swal.fire({
+          title: '¡Error!',
+          text: '{{errorMessage}}',
+          icon: 'error',
+          confirmButtonText: 'Accept',
+          showCloseButton: true,
+          closeButtonAriaLabel: 'Cerrar'
+        });
+      });
+    </script>
+  {{/if}}
+
+
+<h2 class="text-center">Dashboard products</h2>
+
+<section class="container my-4 mb-5">
+  <h2>Create New Product</h2>
+  <form action="/products/create" method="POST">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        name="title"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="author" class="form-label">Author</label>
+      <input
+        type="text"
+        class="form-control"
+        id="author"
+        name="author"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="price" class="form-label">Price</label>
+      <input
+        type="number"
+        class="form-control"
+        id="price"
+        name="price"
+        step="0.01"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="stock" class="form-label">Stock</label>
+      <input
+        type="number"
+        class="form-control"
+        id="stock"
+        name="stock"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="category" class="form-label">Category</label>
+      <input
+        type="text"
+        class="form-control"
+        id="category"
+        name="category"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="photo" class="form-label">Photo URL</label>
+      <input
+        type="text"
+        class="form-control"
+        id="photo"
+        name="photo"
+        placeholder="Enter image URL"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-success">Create products</button>
+    {{#if error}}
+      <p style="color: red;">{{error}}</p>
+    {{/if}}
+  </form>
+</section>
+<section class="container my-4">
+    <h2 class=" mb-3">Product control</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">Category</th>
+        <th scope="col">Price</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each data}}
+        <tr>
+          <td>{{#if this.title}}{{this.title}}{{else}}Not title{{/if}}</td>
+          <td>{{this.author}}</td>
+          <td>{{this.category}}</td>
+          <td>$ {{this.price}}</td>
+          <td>{{this.stock}}</td>
+          <td>
+
+            <button class="btn btn-warning editButton"
+              data-id="{{this.id}}"
+              data-title="{{this.title}}"
+              data-author="{{this.author}}"
+              data-price="{{this.price}}"
+              data-stock="{{this.stock}}"
+              data-category="{{this.category}}"
+              data-photo="{{this.photo}}" >Edit</button>
+            <button class="btn btn-danger deleteButton" data-id="{{this.id}}">Delete</button>
+            
+          </td>
+
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/public/js/editProducts.js"></script>
+<script src="/public/js/deleteProducts.js"></script>

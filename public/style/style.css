@@ -1,0 +1,160 @@
+.navbar-isOnline {
+    position: absolute;   /* Posición absoluta para poder mover el elemento */
+    right: 0;             /* Mueve el elemento a la derecha */
+    top: 10px;            /* Ajusta la distancia desde la parte superior */
+    z-index: 9999;        /* Asegura que esté por encima de otros elementos */
+}
+
+.navbar-isOnline button {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white;              /* Color de texto del botón */
+    border: none;              /* Sin borde */
+    padding: 10px 20px;        /* Relleno para darle un tamaño cómodo */
+    cursor: pointer;           /* Cambia el cursor al pasar sobre el botón */
+}
+
+.navbar-isOnline button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+.hero {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.hero .container {
+    max-width: 1200px; /* Mantiene el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+.hero-content {
+    display: flex; /* Flexbox para disposición horizontal */
+    flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+    align-items: center; /* Alinea verticalmente en el centro */
+}
+
+.hero-text {
+    max-width: 600px; /* Ancho máximo para el texto */
+    margin-right: 20px; /* Espacio a la derecha */
+}
+
+.hero-text h2 {
+    color: rgb(3, 153, 35); /* Color del título */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+.hero-text p {
+    margin: 10px 0; /* Margen vertical */
+}
+
+.hero-image {
+    flex: 1; /* Permite que la imagen tome el espacio restante */
+    text-align: center; /* Centra la imagen */
+}
+
+.hero-image img {
+    max-width: 370px; /* Limita el ancho máximo de la imagen a 370px */
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 770px) {
+    .hero-content {
+        flex-direction: column; /* Cambia a columna en lugar de fila */
+        align-items: center; /* Centra el contenido */
+    }
+    
+    .hero-text {
+        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+        margin-bottom: 20px; /* Agrega margen inferior para separación */
+    }
+
+    .hero-image {
+        margin-top: 20px; /* Agrega espacio arriba de la imagen */
+    }
+}
+
+.section-products {
+    padding: 0 20px; /* Agrega padding a los lados del contenedor */
+}
+
+.card-item {
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    margin-block: 20px;
+    padding: 10px;
+   }
+   
+   .card-item:hover {
+       border: 1px solid rgb(3, 153, 35);
+       border-radius: 10px;
+   }
+   
+   
+   
+   .card-item h3 {
+       text-align: center;
+   }
+   
+   .product-image {
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+    max-height: 320px; /* Ajusta la altura máxima según tu diseño */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+}
+
+
+
+.table-bordered{
+    border: 1px solid rgb(3, 153, 35);
+}
+
+
+
+
+
+.footer-contact {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer-contact h2 {
+    color: rgb(3, 153, 35);
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact .social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-contact .social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-contact .social-media a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-contact .social-media a:hover {
+    color: rgb(3, 153, 35);
+}

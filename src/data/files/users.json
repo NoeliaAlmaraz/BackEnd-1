@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Noelia",
+    "email": "noelia@gmail.com",
+    "password": "njmkijuyghbjh",
+    "photo": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+    "role": "user",
+    "id": "2f75fe42e65d5bfe66a61e1a"
+  },
+  {
+    "name": "Maria",
+    "email": "maria@gmail.com",
+    "password": "njmkijuyghbjh",
+    "photo": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+    "role": "user",
+    "id": "b1201bfb1fe55be9c71b2603"
+  },
+  {
+    "name": "Juan",
+    "email": "juan@gmail.com",
+    "password": "dgfgvbhnjkhuygt",
+    "photo": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+    "role": "admin",
+    "id": "7ec5a7b55247232015e60bf0"
+  },
+  {
+    "name": "Rocio",
+    "email": "claudia@gmail.com",
+    "password": "hsfnjcxmvdkaf",
+    "photo": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+    "role": "admin",
+    "id": "12272518e0683d80a481fb28"
+  },
+  {
+    "name": "Rocio",
+    "email": "rocio@gmail.com",
+    "password": "cbnskjvghj",
+    "photo": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+    "role": "user",
+    "id": "3d44d27a347a8b34b0ad24f4"
+  },
+  {
+    "name": "mario",
+    "email": "mario@gmail.com",
+    "password": "mnvkjusdnv",
+    "photo": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+    "role": "user",
+    "id": "20cc5e0486a824d0c8a9b6ee"
+  },
+  {
+    "name": "cristofer",
+    "email": "cristofer@gmail.com",
+    "password": "cnaejhvng",
+    "photo": "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg",
+    "role": "user",
+    "id": "758796027f4984fcf9dbfb73",
+    "isOnline": false
+  },
+  {
+    "name": "Ana",
+    "email": "ana3@gmail.com",
+    "password": "password3",
+    "photo": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
+    "role": "user",
+    "id": "7c7ef445804931bca541fb53"
+  },
+  {
+    "name": "Luis",
+    "email": "luis4@gmail.com",
+    "password": "password4",
+    "photo": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
+    "role": "admin",
+    "id": "478597497f1a15daff55e931"
+  },
+  {
+    "name": "Sofia",
+    "email": "sofia7@gmail.com",
+    "password": "password7",
+    "photo": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
+    "role": "user",
+    "id": "003e97c9c2ccf383d3706f93"
+  },
+  {
+    "name": "Fernando",
+    "email": "fernando8@gmail.com",
+    "password": "password8",
+    "photo": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
+    "role": "admin",
+    "id": "47b3ee014b70f673d96042aa",
+    "isOnline": false
+  },
+  {
+    "name": "ignacio",
+    "email": "ignacio@gmail.com",
+    "password": "alvbkjsha<dvjgk",
+    "photo": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
+    "role": "user",
+    "id": "c1fe756fb06a2a88a92a4a4a",
+    "isOnline": false
+  },
+  {
+    "name": "pepita",
+    "email": "pepita@gmail.com",
+    "password": "vndiajkvn áiqjvkb",
+    "photo": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
+    "role": "user",
+    "id": "a52c34dc64a9bc3af9b50a5e",
+    "isOnline": false
+  },
+  {
+    "name": "hornela",
+    "email": "hornela@gmail.com",
+    "password": "bkdavjhfvaqejknf",
+    "photo": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
+    "role": "user",
+    "id": "a4e8df8cacb44c117d0b6969",
+    "isOnline": true
+  }
+]

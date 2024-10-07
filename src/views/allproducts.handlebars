@@ -1,0 +1,50 @@
+<h2 class="text-center mt-3 mb-5">Productos</h2>
+<form method="GET" action="/products">
+  <label for="category">Select Category:</label>
+  <select name="category" id="category">
+    <option value="">All</option>
+    <option value="Fantasy">Fantasy</option>
+    <option value="Classic">Classic</option>
+    <option value="Fiction">Fiction</option>
+    <option value="Thriller">Thriller</option>
+    <option value="Adventure">Adventure</option>
+    <option value="Memoir">Memoir</option>
+    <option value="Biography">Biography</option>
+    <option value="Historical Fiction">Historical Fiction</option>
+    <option value="Science Fiction">Science Fiction</option>
+    <option value="Young Adult">Young Adult</option>
+    <option value="Mystery">Mystery</option>
+    <option value="Romance">Romance</option>
+    <option value="Self-Help">Self-Help</option>
+    <option value="Non-Fiction">Non-Fiction</option>
+  </select>
+  <button type="submit">Filter</button>
+</form>
+
+
+<section class="d-flex flex-wrap justify-content-evenly section-products">
+  {{#each data}}
+    <div class="card-item my-2" style="width: 16rem;">
+      <img
+        src="{{photo}}"
+        class="card-img-top rounded product-image"
+        alt="{{title}}"
+      />
+      <div class="card-body">
+        <h4 class="card-title">{{#if this.title}}
+            {{this.title}}
+          {{else}}
+            Not title
+          {{/if}}
+        </h4>
+        <p class="card-text mb-1">Author: {{this.author}}</p>
+        <p class="card-text mb-1">Category: {{this.category}}</p>
+        <p class="card-text mb-1">$ {{this.price}}</p>
+        <p class="card-text mb-1">Stock: {{this.stock}}</p>
+      </div>
+      <a href="/products/{{this.id}}">
+        <button type="button" class="btn btn-outline-success">Details products</button>
+      </a>
+    </div>
+  {{/each}}
+</section>

@@ -1,0 +1,326 @@
+[
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "price": 15.99,
+    "stock": 120,
+    "category": "Fantasy",
+    "photo": "https://covers.openlibrary.org/b/id/7654618-L.jpg",
+    "id": "bd623bc04b2f709b97d0af45"
+  },
+  {
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "price": 12.49,
+    "stock": 60,
+    "category": "Adventure",
+    "photo": "https://covers.openlibrary.org/b/id/8141199-L.jpg",
+    "id": "72bc23a214a10043547889b4"
+  },
+  {
+    "title": "The Great Alone",
+    "author": "Kristin Hannah",
+    "price": 14.99,
+    "stock": 80,
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10156413-L.jpg",
+    "id": "a847eb83a8d1c061813b4266"
+  },
+  {
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "price": 13.99,
+    "stock": 100,
+    "category": "Fantasy",
+    "photo": "https://covers.openlibrary.org/b/id/10991607-L.jpg",
+    "id": "c8ba8b760c93e8ceef5d5b61"
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "price": 11.99,
+    "stock": 150,
+    "category": "Adventure",
+    "photo": "https://covers.openlibrary.org/b/id/5508670-L.jpg",
+    "id": "bbd904aa329b6f2c71a7b4d1"
+  },
+  {
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "price": 14.99,
+    "stock": 110,
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10432095-L.jpg",
+    "id": "67ff0c7b1bdc5f08e2fb4d22"
+  },
+  {
+    "title": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "price": 13.49,
+    "stock": 95,
+    "category": "Fantasy",
+    "photo": "https://covers.openlibrary.org/b/id/10964628-L.jpg",
+    "id": "352b8c7ad644044338784232"
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "price": 12.99,
+    "stock": 80,
+    "category": "Memoir",
+    "photo": "https://covers.openlibrary.org/b/id/10447312-L.jpg",
+    "id": "b5b2f9821d22f53b83e33779"
+  },
+  {
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "price": 15.99,
+    "stock": 70,
+    "category": "Biography",
+    "photo": "https://covers.openlibrary.org/b/id/10426993-L.jpg",
+    "id": "8d9a0b62a6123667b8bdb108"
+  },
+  {
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "price": 13.49,
+    "stock": 65,
+    "category": "Historical Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/7880575-L.jpg",
+    "id": "cdbbe24ea74edc820caa8b2d"
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "price": 12.99,
+    "stock": "70",
+    "category": "Science Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/7222002-L.jpg",
+    "id": "1d285b5fdc01c8486113bb61"
+  },
+  {
+    "title": "The Fault in Our Stars",
+    "author": "John Green",
+    "price": 10.99,
+    "stock": 90,
+    "category": "Young Adult",
+    "photo": "https://covers.openlibrary.org/b/id/11828454-L.jpg",
+    "id": "5c0e1e271eaf0b27af1c5080"
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "price": 12.49,
+    "stock": 40,
+    "category": "Mystery",
+    "photo": "https://covers.openlibrary.org/b/id/7880727-L.jpg",
+    "id": "a218791eb9a9cdbd0abfbba1"
+  },
+  {
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "price": 13.99,
+    "stock": 75,
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/8174732-L.jpg",
+    "id": "99c12c238d5849374368298c"
+  },
+  {
+    "title": "Little Fires Everywhere",
+    "author": "Celeste Ng",
+    "price": 14.99,
+    "stock": 80,
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10156388-L.jpg",
+    "id": "78c70623837ef00963a7db9b"
+  },
+  {
+    "title": "The Power of Habit",
+    "author": "Charles Duhigg",
+    "price": 11.49,
+    "stock": 100,
+    "category": "Self-Help",
+    "photo": "https://covers.openlibrary.org/b/id/11687639-L.jpg",
+    "id": "847b1cd18a8a469d427408b0"
+  },
+  {
+    "title": "The Immortal Life of Henrietta Lacks",
+    "author": "Rebecca Skloot",
+    "price": 12.99,
+    "stock": 90,
+    "category": "Non-Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/7222497-L.jpg",
+    "id": "4c4d54cbe7b69fbc146e99e2"
+  },
+  {
+    "title": "The Seven Husbands of Evelyn Hugo",
+    "author": "Taylor Jenkins Reid",
+    "price": 13.49,
+    "stock": 65,
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/12797404-L.jpg",
+    "id": "4c936f71daf77e3ceed6ef2a"
+  },
+  {
+    "title": "The House on Mango Street",
+    "author": "Sandra Cisneros",
+    "price": 9.99,
+    "stock": 80,
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/8621127-L.jpg",
+    "id": "e72832be94fc2139944571fd"
+  },
+  {
+    "title": "A Gentleman in Moscow",
+    "author": "Amor Towles",
+    "price": 15.99,
+    "stock": 60,
+    "category": "Historical Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10091951-L.jpg",
+    "id": "d9bf238edcf19caefc64a743"
+  },
+  {
+    "title": "The Vanishing Half",
+    "author": "Brit Bennett",
+    "price": 13.99,
+    "stock": 75,
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10775816-L.jpg",
+    "id": "d1d9da05948b32f6ff7476f2"
+  },
+  {
+    "title": "Circe",
+    "author": "Madeline Miller",
+    "price": 14.49,
+    "stock": 95,
+    "category": "Fantasy",
+    "photo": "https://covers.openlibrary.org/b/id/10249768-L.jpg",
+    "id": "fc58a37d04b2d898596fb94a"
+  },
+  {
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "price": 12.99,
+    "stock": 100,
+    "category": "Fantasy",
+    "photo": "https://covers.openlibrary.org/b/id/10425223-L.jpg",
+    "id": "dd2720a4acf144b03a7fc162"
+  },
+  {
+    "title": "Homegoing",
+    "author": "Yaa Gyasi",
+    "price": 13.49,
+    "stock": 85,
+    "category": "Historical Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/8231613-L.jpg",
+    "id": "2c17e20f73d7a4d8c01523cc"
+  },
+  {
+    "title": "The Light We Lost",
+    "author": "Jill Santopolo",
+    "price": 10.99,
+    "stock": 70,
+    "category": "Romance",
+    "photo": "https://covers.openlibrary.org/b/id/9606422-L.jpg",
+    "id": "baa669eb28d033c6d5ee8532"
+  },
+  {
+    "title": "The Giver of Stars",
+    "author": "Jojo Moyes",
+    "price": 14.99,
+    "stock": 75,
+    "category": "Historical Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10030362-L.jpg",
+    "id": "52619d96ca0cce689fd3502c"
+  },
+  {
+    "title": "The Tattooist of Auschwitz",
+    "author": "Heather Morris",
+    "price": 12.99,
+    "stock": 65,
+    "category": "Historical Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10049371-L.jpg",
+    "id": "4e9524d66036a157e9617a10"
+  },
+  {
+    "title": "The Overstory",
+    "author": "Richard Powers",
+    "price": 11.99,
+    "stock": 90,
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10554101-L.jpg",
+    "id": "c95ad373d82ba38e608cffa7"
+  },
+  {
+    "title": "Normal People",
+    "author": "Sally Rooney",
+    "price": 11.49,
+    "stock": 80,
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10552990-L.jpg",
+    "id": "28fda7e110b26d6e6c57d154"
+  },
+  {
+    "title": "Big Little Lies",
+    "author": "Liane Moriarty",
+    "price": 12.49,
+    "stock": 60,
+    "category": "Mystery",
+    "photo": "https://covers.openlibrary.org/b/id/8507205-L.jpg",
+    "id": "f2e3248667c075198d8069f5"
+  },
+  {
+    "title": "Anxious People",
+    "author": "Fredrik Backman",
+    "price": 13.49,
+    "stock": 55,
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10662613-L.jpg",
+    "id": "6ee68962c6d06fd3169b2c13"
+  },
+  {
+    "title": "The Invisible Life of Addie LaRue",
+    "author": "V.E. Schwab",
+    "price": 14.99,
+    "stock": 100,
+    "category": "Fantasy",
+    "photo": "https://covers.openlibrary.org/b/id/10180295-L.jpg",
+    "id": "6a4ac88c7f98abd5177485db"
+  },
+  {
+    "title": "It Ends with Us",
+    "author": "Colleen Hoover",
+    "price": 10.99,
+    "stock": 120,
+    "category": "Romance",
+    "photo": "https://covers.openlibrary.org/b/id/10057890-L.jpg",
+    "id": "ecec43e32632f110f30abf91"
+  },
+  {
+    "title": "The Henna Artist",
+    "author": "Alka Joshi",
+    "price": 12.99,
+    "stock": 75,
+    "category": "Fiction",
+    "photo": "https://covers.openlibrary.org/b/id/10512777-L.jpg",
+    "id": "80f1210f7e0b612d862b5dd0"
+  },
+  {
+    "title": "The Sun Down Motel",
+    "author": "Simone St. James",
+    "price": 11.99,
+    "stock": 50,
+    "category": "Thriller",
+    "photo": "https://covers.openlibrary.org/b/id/10515735-L.jpg",
+    "id": "a3c0d4b0fc7113d35a39adad"
+  },
+  {
+    "title": "The Song of Achilles",
+    "author": "Madeline Miller",
+    "price": 12.49,
+    "stock": 90,
+    "category": "Fantasy",
+    "photo": "https://covers.openlibrary.org/b/id/10403001-L.jpg",
+    "id": "e09b7cf2fbd0f5ee7f7f4e80"
+  }
+]

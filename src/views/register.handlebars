@@ -1,0 +1,39 @@
+{{#if error}}
+  <script>
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: '{{error}}', 
+      showConfirmButton: true,
+    });
+  </script>
+{{/if}}
+
+<section class="d-flex">
+  <form class="d-flex flex-column w-40 mx-auto" action="/users/register" method="POST" id="registerForm">
+    <h1>Register Form</h1>
+    <input class="mb-2" type="text" name="name" id="name" placeholder="Name"  required/>
+    <input class="mb-2" type="text" name="email" id="email" placeholder="Email"  required/>
+    <input class="mb-2"
+      type="password"
+      name="password"
+      id="password"
+      placeholder="Password"
+    />
+    <input class="mb-2" type="text" name="phone" id="phone" placeholder="Phone" />
+    <input class="mb-2" type="text" name="photo" id="photo" placeholder="Photo" />
+    <button  type="submit" id="registerUsers" class="btn btn-outline-success">Register</button>
+    
+
+  </form>
+  </section>
+
+
+
+<!-- 
+  <article class="d-flex flex-column w-40 mx-auto">
+    <h3>Latest Users</h3>
+  <span id="updateUsers">
+  </span>
+  </article>
+ -->
