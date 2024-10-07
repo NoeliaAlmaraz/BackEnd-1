@@ -21,6 +21,7 @@ async function readAllUsers(req, res, next) {
   }
 }
 
+
 async function readOneUsers(req, res, next) {
   try {
     const { uid } = req.params;

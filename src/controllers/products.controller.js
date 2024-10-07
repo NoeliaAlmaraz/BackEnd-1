@@ -16,6 +16,7 @@ async function createProduct(req, res, next) {
   }
 }
 
+
 async function readAllProducts(req, res, next) {
   try {
     let { category } = req.query;

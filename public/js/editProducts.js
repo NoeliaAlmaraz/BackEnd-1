@@ -10,6 +10,7 @@ document.querySelectorAll('.editButton').forEach(button => {
         const originalPhoto = this.getAttribute('data-photo');
 
 
+        
         Swal.fire({
             title: 'Edit Product',
             html: `

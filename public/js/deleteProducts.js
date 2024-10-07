@@ -3,6 +3,7 @@ document.querySelectorAll('.deleteButton').forEach(button => {
         console.log("boton clicado");
         const productId = this.getAttribute('data-id'); // Obtiene el ID del producto
 
+        
         // Mostrar un mensaje de confirmación antes de eliminar el producto
         Swal.fire({
             title: "You're sure?",

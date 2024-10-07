@@ -22,6 +22,7 @@ En este proyecto se creará un servidor con Node.js y express para gestionar los
 2. Creamos la estructura de carpetas 
    # Estructura de Carpetas
 
+
         ```bash
         preentrega1/
         │

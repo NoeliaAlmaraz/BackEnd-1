@@ -102,6 +102,7 @@ class ProductsManager {
           throw error;
         }
       }
+      
     
 
 
