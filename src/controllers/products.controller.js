@@ -67,12 +67,6 @@ async function updateProducts(req, res, next) {
       return res.status(404).json({ message: "Product not found" });
     }
 
-    /*
-            res.render('dashboard', {
-            successMessage: responseManager.message,
-            data: responseManager,
-             });
-        */
     return res.status(201).json({
       successMessage: responseManager.message,
       product: responseManager.product,
@@ -87,12 +81,6 @@ async function deleteProduct(req, res, next) {
     const { pid } = req.params;
     const responseManager = await productsManager.deleteProduct(pid);
 
-    /*
-            res.render('dashboard', {
-            successMessage: responseManager.message,
-            data: responseManager,
-             });
-        */
     return res
       .status(200)
       .json({

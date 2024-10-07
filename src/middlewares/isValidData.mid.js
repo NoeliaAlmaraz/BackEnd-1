@@ -33,7 +33,6 @@ function validProducts(req, res, next) {
 
 
 function validUsers(req, res, next) {
-  // Solo validar si es una solicitud POST
   if (req.method === 'POST') {
     try {
       const { email, password } = req.body;
@@ -84,7 +83,6 @@ function validateUserData(usersdata) {
     throw new Error("Invalid email format");
   }
 
-  // Asignar valores por defecto
   role = role !==  undefined  ? role : "user";
   photo = photo !== ""  ? photo : "https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg";
 
