@@ -4,7 +4,7 @@ import {
   readOneUsers,
   createUsers,
   updateUsers,
-  destroyUser,
+  destroyUser
 } from "../../controllers/users.controller.js";
 import isValidData from "../../middlewares/isValidData.mid.js";
 
@@ -15,4 +15,5 @@ usersApiRouter.post("/",isValidData.validUsers, createUsers);
 usersApiRouter.get("/:uid", readOneUsers);
 usersApiRouter.put("/:uid", updateUsers);
 usersApiRouter.delete("/:uid", destroyUser);
+
 export default usersApiRouter;

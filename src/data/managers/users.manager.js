@@ -1,29 +1,39 @@
 import fs from "fs";
 import crypto from "crypto";
 
-
 class UsersManager {
-    constructor(path) {
+    constructor(path){
         this.path = path;
-        this.exists();
+        this.exists;
     }
 
-    exists() {
+    exists(){
         const exists = fs.existsSync(this.path);
         if (!exists) {
-            fs.writeFileSync(this.path, JSON.stringify([]));
+          fs.writeFileSync(this.path, JSON.stringify([]));
         } else {
-            console.log("The file already exists.");
+          console.log("The file already exists.");
         }
     }
 
+
     async createUsers(data) {
         try {
-            data.id = crypto.randomBytes(12).toString("hex");
             const allUsers = await this.readAllUsers();
+
+            let newId;
+            let idExists;
+    
+            do {
+                newId = crypto.randomBytes(12).toString("hex");
+                idExists = allUsers.some(user => user.id === newId);
+            } while (idExists); 
+    
+            data.id = newId;
+
             allUsers.push(data);
             await fs.promises.writeFile(this.path, JSON.stringify(allUsers, null, 2));
-            return data.id;
+            return {messageSuccess: "User created successfully", data: data};
         } catch (error) {
             console.log(error);
             throw error;
@@ -57,21 +67,34 @@ class UsersManager {
         }
     }
 
-    async updateUsers(id, updatedData) {
+    async readOneUserByEmail(email) {
         try {
             const allUsers = await this.readAllUsers();
-            const index = allUsers.findIndex(user => user.id === id);
-            if (index < 0) {
-                return null;
-            }
-            allUsers[index] = { ...allUsers[index], ...updatedData };
-            await fs.promises.writeFile(this.path, JSON.stringify(allUsers, null, 2));
-            return allUsers[index];
+            const oneUser = allUsers.find(user => user.email === email);
+            return oneUser;
         } catch (error) {
             console.log(error);
             throw error;
         }
     }
+
+
+    
+    async updateUser(id, updatedData) {
+        try {
+          const allUsers = await this.readAllUsers(); 
+          const index = allUsers.findIndex((user) => user.id === id);
+          if (index < 0) {
+            return null;
+          }
+          allUsers[index] = { ...allUsers[index], ...updatedData }; 
+          await fs.promises.writeFile(this.path, JSON.stringify(allUsers, null, 2)); 
+          return { user: allUsers[index], message: "User updated successfully" };
+        } catch (error) {
+          console.log(error);
+          throw error;
+        }
+      }
 
     async deleteUsers(id) {
         try {
@@ -81,13 +104,19 @@ class UsersManager {
                 return null;
             }
             await fs.promises.writeFile(this.path, JSON.stringify(filteredUsers, null, 2));
-            console.log(`User con id ${id} eliminado.`);
-            return id;
+            return {id: id, message: "User deleted successfully"};
         } catch (error) {
             console.log(error);
             throw error;
         }
     }
+    
+    async getOnlineUsers() {
+        const users = await this.readAllUsers();
+        return users.filter(user => user.isOnline === true);
+      }
+    
+
 }
 
 const usersManager = new UsersManager("./src/data/files/users.json");
