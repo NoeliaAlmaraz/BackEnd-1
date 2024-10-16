@@ -1,10 +1,10 @@
 document.querySelectorAll('.deleteButton').forEach(button => {
     button.addEventListener('click', function() {
         console.log("boton clicado");
-        const productId = this.getAttribute('data-id'); // Obtiene el ID del producto
+        const productId = this.getAttribute('data-id'); 
 
         
-        // Mostrar un mensaje de confirmación antes de eliminar el producto
+        
         Swal.fire({
             title: "You're sure?",
             text: "You will not be able to recover this product!",
@@ -16,7 +16,7 @@ document.querySelectorAll('.deleteButton').forEach(button => {
             cancelButtonText: 'Cancel'
         }).then((result) => {
             if (result.isConfirmed) {
-                // Si el usuario confirma, realizar la solicitud de eliminación
+                
                 fetch(`/products/delete/${productId}`, {
                     method: 'DELETE',
                     headers: {
@@ -38,7 +38,7 @@ document.querySelectorAll('.deleteButton').forEach(button => {
                         showConfirmButton: true,
                         confirmButtonText: 'Accept'
                     }).then(() => {
-                        location.reload(); // Recargar la página después de que el usuario cierre la alerta
+                        location.reload(); 
                     });
                 })
                 .catch(error => {
